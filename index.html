@@ -1,0 +1,107 @@
+<!--this edit connects the boards and home pages together
+
+Prof. Prater
+mprater@uat.edu
+
+23may2024
+
+20jun2024
+the assignment Assignment 7.1: Event Driven Programming needs us to add two buttons,
+astart to move the picture around the page, and a stop, to stop movement
+
+16jul2024
+the assignment 11.1 has us activate a sound on our webpage
+i will have a pictur of aq sub, when clicked it will play this sound
+/soundbible.com/2176-Submarine-Diving.html
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prof. Prater's Webpage</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="code.js"></script>
+    <style>
+        th, td{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <h1>Welcome to Prof. Prater's webpage</h1>
+    </header>
+    <nav>
+        <h2>Navigation</h2>
+        <h3><a href="./index.html">Home</a><br>
+            <a href="./boards.html">Boards</a><br>
+            <a href="./game.html">Game page</a><br>
+            <a href="./strings.html">Input Validation page</a>
+        </h3>
+    </nav>
+    <p>
+        I am teaching CSC102. The class is summer 2024. My teacher is Prof. Prater.
+    </p>
+
+    <marquee id="myMarquee" direction="right" scrollamount="50"><img id="memeImage" src="./pics/ms8u3bl2kw351.webp">
+    </marquee>
+    <br>
+    <br>
+    <center>
+        <button id="startButton" onclick="startFun();" class="ButtonStrt">Start</button>
+        <button id="stopButton" onclick="stopFun();" class="ButtonStp">Stop</button>
+    </center>
+    <br>
+    <br>
+    <!--We will put a table in here-->
+    <h2>Favorite Amine Series from the 2000s</h2>
+    <table style="width: 60%;" id="table">
+        <colgroup>
+            <col span="1" style="width: 15%;">
+            <col span="1" style="width: 70%;">
+            <col span="1" style="width: 15%;">
+        </colgroup>
+        <tr>
+            <th>Ranking</th>
+            <th>Name</th>
+            <th>Year</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ghost the Shell: Stand Alone Complex</td>
+            <td>2002</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Fullmetal Alchemist</td>
+            <td>2003</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Death Note</td>
+            <td>2006</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>SAC 2nd Gig</td>
+            <td>2004</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <img src="sub.jfif" onclick="subSounds();"><br>
+    <img src="animaniacs.jfif" onclick="aniSounds();"><br>
+    <footer>
+        Prof. Prater<br>
+        University of Advancing Technology<br>
+        2625 W Baseline Rd, <br>
+        Tempe, AZ 85283 <br>
+        (800) 658-5744
+    </footer>
+</body>
+
+</html>
