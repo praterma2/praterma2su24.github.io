@@ -1,0 +1,53 @@
+body{
+    background-color:forestgreen;
+    color: yellow;
+}
+
+nav{
+height: 570px;
+width: 200px;
+float: left;
+padding: 5px; 
+line-height: 30px;
+}
+
+footer{
+    text-align: center;
+    
+}
+
+#memePic{
+    margin-left: 200px;
+}
+
+#bodyText{
+    margin-right: 200px;
+}
+
+header{
+    text-align: center;
+}
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+
+  .button{
+    width: 100px;
+    height: 30;
+    background-color: white;
+    border-radius: 10px;
+    border-color: skyblue
+    ;
+}
